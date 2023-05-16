@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <div class="nav container">
+        <a href="#" class="logo"
+          ><b>Mobile</b><span class="logoOrange">Shop</span></a
+        >
+        <!-- navigation -->
+        <div class="navigation">
+          <div class="home nav-btn">
+            <i class="fa-solid fa-house"></i><a href="#main">Home</a>
+          </div>
+          <div class="shop-products nav-btn">
+            <i class="fa-solid fa-shop"></i>
+            <a href="#shop-products">Shop</a>
+          </div>
+          <div class="about nav-btn">
+            <i class="fa-solid fa-address-card"></i
+            ><a href="#aboutUs">About Us</a>
+          </div>
+        </div>
+        <!-- cart-icon -->
+        <i class="fa-solid fa-cart-shopping" id="cart-icon">
+          <span></span>
+        </i>
+        <!-- cart -->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!-- cart content -->
+          <div class="cart-content">
+            <div class="cart-items">
+              <!-- render cart items here -->
+            </div>
+          </div>
+          <!-- total -->
+          <div class="total">
+            <div class="total-title">Total (0 items): $0</div>
+          </div>
+          <!-- buy btn -->
+          <button type="button" class="btn-buy">Proceed to checkout</button>
+          <!-- cart-close -->
+          <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <div class="main" id="main">
+      <div class="orderPlaced">
+        <div class="popup" id="popup">
+          <img src="img/404-tick.png" alt="" />
+          <h2>Thanks for your order!</h2>
+          <p>Your order number is <b>218232421</b></p>
+          <button type="button" class="OK-btn" onclick="closePopup()">
+            OK
+          </button>
+        </div>
+      </div>
+      <!-- //////////To the top button -->
+      <div id="return-to-top"><i class="fa-solid fa-chevron-up"></i></div>
+      <!-- commercial section -->
+      <div class="main-commercial">
+        <div class="commercial-image">
+          <img src="img/backPicture/new_iphone.png" alt="" />
+        </div>
+
+        <div class="commercial-discription">
+          <div class="commercial-title">
+            <h2>Get Your New Phone Online Today!</h2>
+          </div>
+          <div class="commercial-text">Fast. Secure. Helpful</div>
+          <div class="commercial-price">$1000</div>
+          <div class="commercial-buyBtn">
+            Buy Now<i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- shop -->
+      <section class="shop container">
+        <h2 class="section-title" id="shop-products">Shop Products</h2>
+        <!-- content -->
+        <div class="shop-content"></div>
+      </section>
+    </div>
+    <!-- carousel -->
+    <div class="carousel">
+      <!-- Slider container -->
+      <div class="slider">
+        <!-- slide 1 -->
+        <div class="slide">
+          <img
+            src="img/Apple/iPhone 14 Pro Max/iPhone_14_Pro_Max_DeepPurple_5G-plus_lrg1 (1).png"
+            alt="slide1"
+          />
+        </div>
+
+        <!-- slide 2 -->
+        <div class="slide">
+          <img
+            src="img/Google pixel/Google Pixel 7 Pro/Google_Pixel_7_Pro.png"
+            alt="slide2"
+          />
+        </div>
+
+        <!-- slide 3 -->
+        <div class="slide">
+          <img
+            src="img/Samsung/Samsung Galaxy S23 Ultra/Samsung_Galaxy_S23_Ultra_Lavender_5G_plus_lrg1 (1).png"
+            alt="slide3"
+          />
+        </div>
+
+        <!-- slide 4 -->
+        <div class="slide">
+          <img
+            src="img/Motorola/Motorola edge/Motorola_Edge_Mineral_Gray_5G_lrg1 (1).png"
+            alt="slide4"
+          />
+        </div>
+
+        <!-- Control buttons -->
+        <button class="slide-btn btn-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="slide-btn btn-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-main">
+        <div class="aboutus column">
+          <h2 id="aboutUs">About Us</h2>
+          <div class="aboutShop"><a href="#">About Mobile Shop</a></div>
+          <div class="lets-talk">
+            <a href="#">Lets Talk With MobileShop!</a>
+          </div>
+          <div class="media"><a href="#">MobileShop Media</a></div>
+        </div>
+
+        <div class="customer-service column">
+          <h2>Customer resources</h2>
+          <div class="track-order">
+            <a href="#">Track My Order</a>
+          </div>
+          <div class="return">
+            <a href="#">Return Policy</a>
+          </div>
+          <div class="security"><a href="#">Security</a></div>
+        </div>
+
+        <div class="getInTouch column">
+          <h2>Get in touch</h2>
+          <div class="findStore">
+            <a href="#"><i class="fa-solid fa-globe"></i>Find A Store</a>
+          </div>
+          <div class="book">
+            <a href="#"
+              ><i class="fa-regular fa-calendar"></i>Book An Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-icons">
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-cc-visa"></i>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
