@@ -264,6 +264,9 @@ let buyBtn = document.querySelector(".btn-buy");
 buyBtn.addEventListener("click", () => {
   if (cartt.textContent.includes("Your cart is empty")) {
     alert("Your cart is empty");
+  } else if (cartItemsEl.innerHTML === "") {
+    cartItemsEl.innerHTML = "Your cart is empty";
+    alert("Your cart is empty");
   } else {
     openPopup();
     cartt.classList.remove("active");
@@ -274,7 +277,6 @@ buyBtn.addEventListener("click", () => {
     subtotalEl.innerHTML = `Total (0 items): $0`;
   }
 });
-
 /////////////To the top button///////////////////////
 const toTheTop = document.querySelector("#return-to-top");
 

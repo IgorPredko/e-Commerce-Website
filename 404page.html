@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <div class="nav container">
+        <a href="index.html" class="logo"
+          ><b>Mobile</b><span class="logoOrange">Shop</span></a
+        >
+        <!-- navigation -->
+        <div class="navigation">
+          <div class="home nav-btn">
+            <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
+          </div>
+          <div class="shop-products nav-btn">
+            <i class="fa-solid fa-shop"></i>
+            <a href="#shop-products">Shop</a>
+          </div>
+          <div class="about nav-btn">
+            <i class="fa-solid fa-address-card"></i
+            ><a href="#aboutUs">About Us</a>
+          </div>
+        </div>
+        <!-- cart-icon -->
+        <i class="fa-solid fa-cart-shopping" id="cart-icon">
+          <span></span>
+        </i>
+        <!-- cart -->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!-- cart content -->
+          <div class="cart-content">
+            <div class="cart-items">
+              <!-- render cart items here -->
+            </div>
+          </div>
+          <!-- total -->
+          <div class="total">
+            <div class="total-title">Total (0 items): $0</div>
+          </div>
+          <!-- buy btn -->
+          <button type="button" class="btn-buy">Proceed to checkout</button>
+          <!-- cart-close -->
+          <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <div id="main404"></div>
+    <footer>
+      <div class="footer-main">
+        <div class="aboutus column">
+          <h2 id="aboutUs">About Us</h2>
+          <div class="aboutShop"><a href="#">About Mobile Shop</a></div>
+          <div class="lets-talk">
+            <a href="#">Lets Talk With MobileShop!</a>
+          </div>
+          <div class="media"><a href="#">MobileShop Media</a></div>
+        </div>
+
+        <div class="customer-service column">
+          <h2>Customer resources</h2>
+          <div class="track-order">
+            <a href="#">Track My Order</a>
+          </div>
+          <div class="return">
+            <a href="#">Return Policy</a>
+          </div>
+          <div class="security"><a href="#">Security</a></div>
+        </div>
+
+        <div class="getInTouch column">
+          <h2>Get in touch</h2>
+          <div class="findStore">
+            <a href="#"><i class="fa-solid fa-globe"></i>Find A Store</a>
+          </div>
+          <div class="book">
+            <a href="#"
+              ><i class="fa-regular fa-calendar"></i>Book An Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-icons">
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-cc-visa"></i>
+      </div>
+    </footer>
+  </body>
+</html>
